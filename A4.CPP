@@ -2,18 +2,12 @@
 #include<conio.h>
 void main()
 {
-int n1,n2,n3,rev,num;
-printf("enter3 digit number\n");
-scanf("%d",&num);
-
-n1=num%10;
-num=num/10;
-n2=num%10;
-num=num/10;
-n3=num%10;
-
-rev=n1*100+n2*10+n3*1;
-
-printf("reverse number =%d",rev);
+float td,fuel,average;   //td=total distance
+printf("total distance travel by bike \n");      //distance i km
+scanf("%f",&td);
+printf("total fuel consume \n");
+scanf("%f",&fuel);                               //fuel in liters
+average=td/fuel;
+printf("average of bike %f \n",average);
 getch();
 }
