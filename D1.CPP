@@ -3,11 +3,14 @@
 void main()
 {
 int a,b,c;
-printf("value of first integer\n ");
+printf("enter n digit number :\n");
 scanf("%d",&a);
-printf("value of second integer\n");
-scanf("%d",&b);
- c = a+b;
- printf("sum of two number is %d\n",c);
- getch();
- }
+b=0;
+printf("numbers up to %d \n",a);
+while(b<=a)
+{
+printf("%d\n",b);
+b++;
+}
+getch();
+}
