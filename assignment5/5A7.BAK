@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,a[6],r;
+clrscr();
+for(i=0;i<6;i++)
+{
+printf("a[%d]= ",i);
+scanf("%d",&a[i]);
+}
+for(i=0;i<6;i++)
+{
+if(i<3)
+{
+r=a[i];
+a[i]=a[6-(i+1)];
+a[6-(i+1)]=r;
+ }
+
+}
+for(i=0;i<6;i++)
+{
+printf("a[%d]=%d\n",i,a[i]);
+}
+getch();
+}
