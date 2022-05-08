@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int a,i,s,c;
+printf("enter the number of line");
+scanf("%d",&a);
+printf("number	square	cube");
+for(i=1;i<=a;i++)
+{
+printf("\n%d	%d	%d",i,i*i,i*i*i);
+}
+
+    getch();
+
+}
