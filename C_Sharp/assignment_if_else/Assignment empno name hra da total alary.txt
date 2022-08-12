@@ -1,0 +1,33 @@
+
+
+//wap to accept empno, empname , basicsalary and calculate hra ie 32% of basic, da ie 45% of basic display empno, empname, hra, da, total salary
+
+using System;
+namespace employe
+{
+    class employ
+    {
+        static void Main()
+        {
+            int n, hra, da, bs, ts;
+
+            string name;
+            Console.Write("emp name ="); name = Console.ReadLine();
+
+            Console.Write("emp no ="); n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Basic salary ="); bs = Convert.ToInt32(Console.ReadLine());
+
+            hra = 32 * bs / 100;
+            da = 45 * bs / 100;
+            Console.WriteLine("hra =" + hra);
+            Console.WriteLine("da=" + da);
+
+            ts=bs+hra+da;
+
+            Console.Readline();
+            Console.WriteLine("Total Salary=" + ts);
+
+
+        }
+    }
+}
