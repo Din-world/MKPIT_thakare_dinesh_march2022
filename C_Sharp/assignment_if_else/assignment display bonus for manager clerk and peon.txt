@@ -1,0 +1,37 @@
+/*wap to empno, empname, designation
+calculate and display bonus ie 10000 for manager
+	5000 for clerk
+	2000 for peon */
+using System;
+namespace bonus
+{
+    class bonus 
+    {
+        static void Main()
+        {
+            string empname, designation;
+            int bonus = 0;
+            Console.WriteLine("enter empname ");
+            empname = Console.ReadLine();
+
+            Console.WriteLine("enter designation ");
+            designation = Console.ReadLine();
+
+            if (designation == "manager")
+            {
+                bonus = 10000;
+            }
+            else if (designation == "clerk")
+            {
+                bonus = 5000;
+            }
+            else if (designation == "peon")
+            {
+                bonus = 2000;
+            }
+            Console.WriteLine("empname  ={0} , bonus = {1} ", empname, bonus);
+
+
+        }
+    }
+}
