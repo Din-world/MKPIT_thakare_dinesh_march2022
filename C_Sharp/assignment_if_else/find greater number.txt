@@ -1,0 +1,26 @@
+using System;
+namespace Greater
+{
+    class Program
+    {
+
+        static void Main()
+        {
+            int a, b;
+            Console.WriteLine("enter the number");
+            Console.Write("a="); a = Convert.ToInt32(Console.ReadLine());
+          
+            Console.Write("b="); b = Convert.ToInt32(Console.ReadLine());
+
+            if (a > b)
+                Console.WriteLine("a is greater number");
+            else
+                Console.WriteLine("b is greater number");
+          
+
+            Console.Read();
+
+        }
+
+    }
+}
