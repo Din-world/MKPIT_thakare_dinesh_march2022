@@ -1,0 +1,30 @@
+// Write a C# Sharp program to check whether a given number is even or odd. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt2
+{
+    class Evenodd
+    {
+        static void Main()
+        {
+
+
+            int a;
+            Console.Write("Test Data : ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("{0} is an even Integer", a);
+            }
+            else
+            {
+                Console.WriteLine("{0} is an odd Integer", a);
+            }
+        }
+
+
+    }
+}
