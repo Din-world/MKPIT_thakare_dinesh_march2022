@@ -1,0 +1,30 @@
+// Write a C# Sharp program to find whether a given year is a leap year or not. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt4
+{
+    class Evenodd
+    {
+        static void Main()
+        {
+
+
+            int a;
+            Console.Write("Test Data : ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            if (a%4==0)
+            {
+                Console.WriteLine("{0} is an Leap Year", a);
+            }
+            else
+            {
+                Console.WriteLine("{0} is an not a Leap Year", a);
+            }
+        }
+
+
+    }
+} 
