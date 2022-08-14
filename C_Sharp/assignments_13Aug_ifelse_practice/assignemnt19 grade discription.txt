@@ -1,0 +1,51 @@
+/*. Write a program in C# Sharp to accept a grade and declare the equivalent description : 
+
+Grade	Description
+E	Excellent
+V	Very Good
+G	Good
+A	Average
+F	Fail
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt1
+{
+    class grade
+    {
+        static void Main()
+        {
+            char c;
+            Console.Write("Input the grade :");
+                c = Convert.ToChar(Console.ReadLine());
+
+            if (c == 'a' || c == 'A')
+            {
+                Console.WriteLine("You have chosen : Average");
+            }
+            else if (c == 'f' || c == 'F')
+            {
+
+                Console.WriteLine("You have chosen : Fail");
+            }
+            else if (c == 'v' || c == 'V')
+            {
+
+                Console.WriteLine("You have chosen : Very Good");
+            }
+            else if (c == 'g' || c == 'G')
+            {
+
+                Console.WriteLine("You have chosen : Good");
+            }
+            else if (c == 'e' || c == 'E')
+            {
+
+                Console.WriteLine("You have chosen : Excellent");
+            }
+
+        }
+    }
+}
