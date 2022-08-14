@@ -1,0 +1,54 @@
+//Write a program in C# Sharp to read any day number in integer and display day name in the word. 
+ using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt20
+{
+    class number
+    {
+        static void Main()
+        {
+            int n ;
+            Console.Write("Input the number :");
+            n = Convert.ToInt32(Console.ReadLine());
+              
+            if(n == 1)
+            {
+                Console.WriteLine("Monday");
+            }
+            else if(n == 2)
+            {
+
+                Console.WriteLine("tuesday");
+            }
+            else if (n == 3)
+            {
+
+                Console.WriteLine("wednsday");
+            }
+            else if (n == 4)
+            {
+
+                Console.WriteLine("Thursday");
+            }
+            else if (n == 5)
+            {
+
+                Console.WriteLine("Friday");
+            }
+            else if (n == 6)
+            {
+
+                Console.WriteLine("saturday");
+            }
+            else if (n == 7)
+            {
+
+                Console.WriteLine("Sunday");
+            }
+
+        }
+    }
+    
+}
