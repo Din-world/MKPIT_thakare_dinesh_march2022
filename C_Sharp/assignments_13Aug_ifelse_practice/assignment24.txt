@@ -1,0 +1,62 @@
+//. Write a program in C# Sharp which is a Menu-Driven Program to compute the
+//area of the various geometrical shape. 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt24
+{
+    class area
+    {
+        static void Main()
+        {
+            int n;
+            Console.WriteLine("enter 1= area of circle  2=square, 3=triangle");
+
+            Console.Write("Input the number :");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            if (n == 1)
+            {
+                int r;
+                double a;
+                Console.WriteLine("enter the radius r =");
+                r = Convert.ToInt32(Console.ReadLine());
+                a = r * r * (3.14);
+                
+                Console.WriteLine("the area is {0}", a);
+            }
+            else if (n == 3)
+            {
+                int b, h;
+                float a;
+                Console.WriteLine("enter base and height of triangle");
+                Console.Write("height :");
+                h = Convert.ToInt32(Console.ReadLine());
+                Console.Write("base :");
+                 b= Convert.ToInt32(Console.ReadLine());
+
+                a = b * h / 2;
+                Console.WriteLine("the area is {0}", a);
+               
+            }
+            else if (n == 2)
+            {
+
+                int c;
+                float a;
+                Console.WriteLine("enter the side of square");
+                Console.Write("side :");
+                c = Convert.ToInt32(Console.ReadLine());
+                a = c * c;
+                Console.WriteLine("the area is {0}", a);
+
+            }
+             
+            
+
+        }
+    }
+
+}
