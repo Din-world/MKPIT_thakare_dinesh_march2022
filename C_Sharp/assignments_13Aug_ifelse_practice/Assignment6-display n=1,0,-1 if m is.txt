@@ -1,0 +1,47 @@
+//Write a C# Sharp program to read the value of an integer m and
+//the value of n is 1 when m is larger than 0, 0 when m is 0
+//and -1 when m is less than 0. 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt6
+{
+    class value
+    {
+        static void Main()
+        {
+
+
+            int m, n;
+            Console.Write("Test Data : ");
+
+           m = Convert.ToInt32(Console.ReadLine());
+
+            if (m>0)
+            {
+                n = 1;
+                Console.WriteLine("The Value of n={0}", n);
+            }
+            else if(m==0)
+            {
+
+                n = 0;
+                Console.WriteLine("The Value of n={0}", n);
+            }
+            else
+            {
+
+                n = -1;
+                Console.WriteLine("The Value of n={0}", n);
+            }
+        }
+
+        
+
+        
+
+
+    }
+}
