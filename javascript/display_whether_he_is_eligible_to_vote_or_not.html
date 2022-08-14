@@ -1,0 +1,35 @@
+
+//6- wap to accept age from the user and display whether he is eligible to vote or not.
+ 
+<html>
+
+<head>
+
+<script>
+function display()
+{
+ var num1= parseInt(document.getElementById("t1").value);
+ 
+ 
+ if(num1>=18)
+{
+  document.getElementById("s").innerText="He Is Eligible for vote" ;
+}
+  else
+{ document.getElementById("s").innerText="He Is Not Eligible for vote" ;
+}
+
+
+}
+</script>
+</head>
+<body>
+<h1 style="align:center; " >solutions </h1>
+<hr>
+enter the Age = <input type="text" id="t1" > <br><br>
+
+ result :<span id="s"> </span><br><br>
+<input type="button" value="click" onclick="display();" >
+
+</body>
+</html>
