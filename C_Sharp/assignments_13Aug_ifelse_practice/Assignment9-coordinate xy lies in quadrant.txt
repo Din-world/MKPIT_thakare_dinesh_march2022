@@ -1,0 +1,49 @@
+//Write a C# Sharp program to accept a coordinate point in an XY coordinate system and
+//determine in which quadrant the coordinate point lies.  
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt9
+{
+    class Height
+    {
+        static void Main()
+        {
+            int x, y;
+            Console.Write("Input the Value of X Coordinate :");
+            x=Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the Value of Y Coordinate : ");
+            y=Convert.ToInt32(Console.ReadLine());
+
+            if (x > 0 && y > 0)
+            {
+                Console.WriteLine("The coordinate point ({0},{1}) Lies In the First Quadrant", x, y);
+            }
+            else if (x < 0 && y > 0)
+            {
+
+                Console.WriteLine("The coordinate point ({0},{1}) Lies In the second Quadrant", x, y);
+
+            }
+            else if (x > 0 && y < 0)
+            {
+                Console.WriteLine("The coordinate point ({0},{1}) Lies In the third Quadrant", x, y);
+
+            }
+            else
+            {
+                Console.WriteLine("The coordinate point ({0},{1}) Lies In the Fourth Quadrant", x, y);
+
+            }
+
+
+        }
+
+
+
+
+
+
+    }
+}
