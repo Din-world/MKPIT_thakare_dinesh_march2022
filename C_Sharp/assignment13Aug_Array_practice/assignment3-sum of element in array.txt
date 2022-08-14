@@ -1,0 +1,45 @@
+//Write a program in C# Sharp to find the sum of all elements of the array. 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace assignment2
+{
+    class number
+    {
+        static void Main()
+        {
+            int i, j, l, sum = 0;
+
+            Console.WriteLine("Input the number of elements to store in the array : ");
+            l = Convert.ToInt32(Console.ReadLine());
+
+            int[] num = new int[l];
+            Console.WriteLine("enter the array");
+            for (i = 0; i < l; i++)
+            {
+                Console.WriteLine("num[{0}] =", i);
+                num[i] = Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("The values store into the array are:");
+            for (j = 0; j < l; j++)
+            {
+                Console.WriteLine(num[j]);
+            }
+            Console.WriteLine("Sum of all elements stored in the array is : ");
+            for(i = 0; i < l; i++)
+            {
+                sum=sum+num[i];
+            }
+            Console.Write(sum);
+
+
+
+
+
+        }
+    }
+}
