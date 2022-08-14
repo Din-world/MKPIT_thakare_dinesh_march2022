@@ -1,0 +1,52 @@
+/*Write a C# Sharp program to find the eligibility of admission for a professional course based on the following 
+ * criteria: 
+Marks in Maths >=65
+Marks in Phy >=55
+Marks in Chem>=50
+Total in all three subject >=180
+or
+Total in Math and Subjects >=140
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt10
+{
+   class Marks
+   {
+       static void Main()
+       {
+            int x, y, z;
+            Console.Write("Input the marks obtained in Physics: ");
+            x=Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the marks obtained in Chemistry :");
+            y=Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the marks obtained in Mathematics :");
+            z =Convert.ToInt32(Console.ReadLine());
+
+            if (x >= 55 && y >= 50 && z >= 65)
+            {
+                Console.WriteLine("The candidate is eligible for admission.");
+            }
+            else if (z + (x + y) >= 140)
+            {
+                Console.WriteLine("The candidate is eligible for admission.");
+
+
+            }
+            else
+            {
+                Console.WriteLine("the Candidate is not elgible for admisssion");
+            }
+
+
+        }
+
+
+
+
+
+
+   }
+}
