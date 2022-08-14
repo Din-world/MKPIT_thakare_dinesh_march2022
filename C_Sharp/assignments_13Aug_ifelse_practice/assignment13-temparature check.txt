@@ -1,0 +1,50 @@
+/* Write a C# Sharp program to read temperature in centigrade and display a suitable message according to temperature state below : 
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt13
+{
+    class Temperature
+    {
+        static void Main()
+        {
+            int t;
+            Console.Write("Input the temperature in centigrate :");
+            t=Convert.ToInt32(Console.ReadLine());
+
+            if (t < 0)
+            {
+                Console.WriteLine("its a freezing wheather");
+            }
+            else if(t>=0 && t <= 10)
+            {
+                Console.WriteLine("Its a very Cold Wheather");
+
+            }
+            else if(t>=10 && t <= 20)
+            {
+                Console.WriteLine("its a Cold wheather");
+            }
+            else if(t>=20 && t<= 30)
+            {
+                Console.WriteLine("Its a Normal Condition ");
+            }
+            else if(t>=30 && t<= 40)
+            {
+                Console.WriteLine("its a Hot Consition");
+            }
+            else if (t > 40)
+            {
+                Console.WriteLine("its a Very Hot wheather");
+            }
+        }
+    }
+}
