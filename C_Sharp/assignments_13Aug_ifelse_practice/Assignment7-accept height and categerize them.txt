@@ -1,0 +1,45 @@
+//Write a C# Sharp program to accept the height of a person in centimeter and categorize
+//the person according to their height. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt7
+{
+    class Height
+    {
+        static void Main()
+        {
+
+
+            int m;
+            Console.Write("Test Data : ");
+
+            m = Convert.ToInt32(Console.ReadLine());
+
+            if (m >190&& m<=180)
+            {
+                
+                Console.WriteLine("The Person is tall");
+            }
+            else if (m<180 && m>=150)
+            {
+
+
+                Console.WriteLine("the person is medium");
+            }
+            else
+            {
+
+
+                Console.WriteLine("The person is dwarf");
+            }
+        }
+
+
+
+
+
+
+    }
+}
