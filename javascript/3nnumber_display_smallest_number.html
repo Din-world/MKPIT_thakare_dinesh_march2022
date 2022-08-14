@@ -1,0 +1,41 @@
+//4- wap to accept 3 numbers and display smallest number
+<html>
+
+<head>
+
+<script>
+function display()
+{
+ var num1= parseInt(document.getElementById("t1").value);
+var num2= parseInt(document.getElementById("t2").value);
+var num3= parseInt(document.getElementById("t3").value);
+ 
+ if(num1<num2 && num1<num3)
+{
+  document.getElementById("s").innerText="num1 is smaller" ;
+}
+else if(num2<num1 && num2<num3)
+{
+document.getElementById("s").innerText="num2 is smaller" ;
+}
+else
+{
+document.getElementById("s").innerText="num3 is smaller" ;
+
+}
+
+}
+</script>
+</head>
+<body>
+<h1 style="align:center; " >solutions </h1>
+<hr>
+enter the number1= <input type="text" id="t1" > <br><br>
+enter the number2= <input type="text" id="t2" > <br><br>
+
+enter the number3= <input type="text" id="t3" > <br><br>
+ result :<p id="s"> </p><br><br>
+<input type="button" value="click" onclick="display();" >
+
+</body>
+</html>
