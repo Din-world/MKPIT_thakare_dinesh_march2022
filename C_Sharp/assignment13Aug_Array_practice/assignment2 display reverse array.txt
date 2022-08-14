@@ -1,0 +1,46 @@
+//Write a program in C# Sharp to read n number of values in an array and display it in reverse order. 
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace assignment2
+{
+    class number
+    {
+        static void Main()
+        {
+            int i, j, l;
+
+            Console.WriteLine("Input the number of elements to store in the array : "); 
+            l=Convert.ToInt32(Console.ReadLine());
+
+            int[] num=new int[l];
+            Console.WriteLine("enter the array");
+            for(i=0;i<l;i++)
+            {
+                Console.WriteLine("num[{0}] =", i);
+                num[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("The values store into the array are:");
+            for (j = 0; j < l; j++)
+            {
+                Console.WriteLine(num[j]);
+            }
+            Console.WriteLine("The values store into the array in reverse are :");
+            for(j = l-1; j >=0; j--)
+            {
+                Console.WriteLine(num[j]);
+            }
+
+
+
+
+
+
+        }
+    }
+}
