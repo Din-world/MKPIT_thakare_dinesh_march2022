@@ -1,0 +1,79 @@
+/*Write a program in C# Sharp which is a Menu-Driven Program to perform a simple calculation. 
+
+Test Date and Expected Output
+Enter the first Integer :10
+Enter the second Integer :2
+
+Here are the options :
+1 - Addition.
+2 - Substraction.
+3 - Multiplication.
+4 - Division.
+5 - Exit.
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt25
+{
+    class area
+    {
+        static void Main()
+        {
+            int a,n,m;
+            Console.Write("Input the number1 :");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the number2 :");
+            m = Convert.ToInt32(Console.ReadLine());
+
+         
+            Console.WriteLine("enter 1=addition  2=substraction, 3=multiplication ,4=division 5=exit");
+            Console.Write("choose your choice :");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            if (n == 1)
+            {
+                int r;
+
+                r = a = m;
+
+                Console.WriteLine("the addition  is {0}", r);
+            }
+            else if (n == 3)
+            {
+                int s;
+                s = a *m;
+                Console.WriteLine("the multiplication is {0}", s);
+
+            }
+            else if (n == 2)
+            {
+
+                int c;
+
+                c = a - m;
+                Console.WriteLine("the substraction  is {0}", c);
+
+            }
+            else if (n == 4)
+            {
+
+                int c;
+
+                c = a/m;
+                Console.WriteLine("the divsion is {0}", c);
+
+            }
+            else if (n == 5)
+            {
+
+                Console.WriteLine("End");
+            }
+
+
+
+        }
+    }
+
+}
