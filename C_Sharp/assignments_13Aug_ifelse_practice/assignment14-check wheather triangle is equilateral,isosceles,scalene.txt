@@ -1,0 +1,36 @@
+//Write a C# Sharp program to check whether a triangle is Equilateral, Isosceles or Scalene. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt14
+{
+    class Triangle
+    {
+        static void Main()
+        {
+            int s1, s2, s3;
+
+            Console.WriteLine("enter the sides of triangle");
+            s1 = Convert.ToInt32(Console.ReadLine());
+            s2 = Convert.ToInt32(Console.ReadLine());
+            s3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("side of triangle {0} {1} {2}", s1, s2, s3);
+            if (s1 == s2 && s1 == s3 )
+            {
+                Console.WriteLine("Its a Equilateral Triangle");
+            }
+            else if (s1 != s2 && s2 != s3 && s3 != s1)
+            {
+                Console.WriteLine("its a scalene triangle");
+            }
+            else if (s1 == s2 || s2 == s3)
+            {
+                Console.WriteLine("Its a Isosceles triangle");
+            }
+
+        }
+    }
+
+}
