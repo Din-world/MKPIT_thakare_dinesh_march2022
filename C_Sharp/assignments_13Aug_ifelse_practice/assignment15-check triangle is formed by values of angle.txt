@@ -1,0 +1,32 @@
+//Write a C# Sharp program to check whether a triangle can be formed by the given value for the angles. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt15
+{
+    class triangle
+    {
+      static void Main()
+        {
+            int s1, s2, s3;
+
+            Console.WriteLine("enter the angle of triangle");
+
+            s1 = Convert.ToInt32(Console.ReadLine());
+            s2 = Convert.ToInt32(Console.ReadLine());
+            s3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("angle of triangle {0} {1} {2}", s1, s2, s3);
+            int t=s1+s2+s3;
+            if (t == 180)
+            {
+                Console.WriteLine("its a valid for triangle ");
+            }
+            else
+            {
+                Console.WriteLine("The Triangle is not valid");
+            }
+        }
+    }
+}
