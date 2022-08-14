@@ -1,0 +1,43 @@
+//. Write a C# Sharp program to check whether an alphabet is a vowel or consonant. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace assignemnt16
+{
+    class alphabet
+    {
+        static void Main()
+        {
+            char a;
+            Console.WriteLine("enter the alphabete");
+            Console.Write("alphabet :");
+            a = Convert.ToChar(Console.ReadLine());
+            if (a == 'a' || a == 'A')
+            {
+                Console.WriteLine("its a vowel");
+            }
+            else if (a == 'e' || a == 'E')
+            {
+                Console.WriteLine("its a vowel");
+
+            }
+            else if (a == 'i' || a == 'I')
+            {
+                Console.WriteLine("its a vowel");
+            }
+            else if(a == 'o' || a == 'O')
+            {
+                Console.WriteLine("its a vowel");
+            }
+            else if(a=='u' || a == 'U')
+            {
+                Console.WriteLine("its a vowel");
+            }
+            else
+            {
+                Console.WriteLine("its a consonant");
+            }
+        }
+    }
+}
