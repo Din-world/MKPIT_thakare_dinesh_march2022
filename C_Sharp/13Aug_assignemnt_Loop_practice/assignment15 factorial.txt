@@ -1,0 +1,36 @@
+//Write a C# Sharp program to calculate the factorial of a given number. 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace assignment15
+{
+    class display
+    {
+        static void Main()
+        {
+            int i, n;
+            int a = 1;
+            Console.Write("Input the number :");
+            n = Convert.ToInt32(Console.ReadLine());
+
+
+            for (i = n; i >= 1; i--)
+            {
+
+                a = a * i;
+               
+            }
+            Console.WriteLine("the factorial of {0}={1}",n,a);
+
+
+
+
+
+
+        }
+    }
+
+}
