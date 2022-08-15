@@ -1,0 +1,37 @@
+//.Write a program in C# Sharp to make such a pattern like right angle triangle with number increased by 1. 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace assignment12
+{
+    class display
+    {
+        static void Main()
+        {
+            int i, j;
+
+            int a = 1;
+
+
+            Console.WriteLine("the right angle pattern ");
+            for (i = 1; i <=4;i++)
+            {
+                for (j =1; j <=i;j++)
+                {
+                    Console.Write(a);
+                    a++;
+                }
+                Console.WriteLine();
+
+            }
+
+
+
+
+        }
+    }
+
+}
