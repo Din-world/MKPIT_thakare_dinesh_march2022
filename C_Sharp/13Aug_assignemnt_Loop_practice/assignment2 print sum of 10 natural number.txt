@@ -1,0 +1,30 @@
+//Write a C# Sharp program to find the sum of first 10 natural numbers. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace assignment2
+{
+    class sum
+    {
+        static void Main()
+        {
+            int i;
+            int sum = 0;
+            Console.WriteLine("tha natural number are:");
+            for(i = 0; i <=10; i++)
+            {
+                Console.Write(i+" ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("addition of 10 natural number are:");
+            for (i = 0; i <= 10; i++)
+            {
+                sum=sum+i;
+                
+            }
+            Console.Write(sum);
+        }
+    }
+}
