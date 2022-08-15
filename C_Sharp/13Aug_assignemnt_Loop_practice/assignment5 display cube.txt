@@ -1,0 +1,29 @@
+//Write a program in C# Sharp to display the cube of the number up to given an integer. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace assignment5
+{
+    class cube
+    {
+        static void Main()
+        {
+            int i,n;
+            int cube;
+            Console.Write("enter number of integer : ");
+            n=Convert.ToInt32(Console.ReadLine());
+
+
+            for (i = 1; i <= n; i++)
+            {
+                cube = i * i * i;
+                Console.WriteLine("Number is : {0} and cube of the {1} is :{2}", i, i, cube);
+                 
+
+            }
+        }
+    }
+             
+}
