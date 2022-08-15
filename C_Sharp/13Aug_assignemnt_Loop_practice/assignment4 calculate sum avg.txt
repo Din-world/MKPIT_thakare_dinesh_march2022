@@ -1,0 +1,50 @@
+//Write a program in C# Sharp to read 10 numbers from keyboard and find their sum and average. 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace assignment4
+{
+    class sum
+    {
+        static void Main()
+        {
+            int i;
+            int[] l=new int[10];
+            int sum = 0;
+            double avg;
+           
+           
+            Console.WriteLine(" enter 10 natural number are:");
+            for (i = 0; i < 10; i++)
+            {
+              
+                l[i] = Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine();
+            Console.WriteLine(" natural number are:");
+            
+            for (i = 0; i < 10; i++)
+            {
+
+                Console.Write(l[i] +" ");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Sum of 10 natural number are: ");
+
+            for (i = 1; i < 10; i++)
+            {
+                sum = sum + l[i];
+
+            }
+            Console.Write(sum); 
+            Console.WriteLine();
+            avg = sum / 10;
+            
+            Console.WriteLine("Average ={0} ",avg);
+        }
+    }
+}
