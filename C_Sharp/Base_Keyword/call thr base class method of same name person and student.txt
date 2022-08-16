@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace call_base_method
+{
+    class person
+    {
+        string name="Dinesh";
+        int age=22;
+        public void display()
+        {
+            Console.WriteLine("name :" + name);
+            Console.WriteLine("age :"+age);
+        }
+        class student : person
+        {
+            string education = "engineering";
+            int salary = 50000;
+            public void display()
+            {
+                base.display();
+                Console.WriteLine("education :"+education);
+                Console.WriteLine("salary :"+ salary);
+            }
+            class program
+            {
+                static void Main()
+                {
+                   student std=new student();   
+                    std.display();
+
+                }
+            }
+
+        }
+    }
+}
