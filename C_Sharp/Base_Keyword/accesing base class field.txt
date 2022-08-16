@@ -1,0 +1,39 @@
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Base
+{
+    class Instistute
+    {
+        public string name = "MKPITS";
+    }
+    class student:Instistute
+    {
+        public string name = "Dinesh";
+        public void display()
+        {
+            Console.WriteLine("Instistute Name " + base.name); // base.name is calling name of base class
+            Console.WriteLine("Student Name " + name);   
+        }
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            student student = new student();
+            student.display();
+
+            
+
+        }
+    }
+
+
+
+
+}
