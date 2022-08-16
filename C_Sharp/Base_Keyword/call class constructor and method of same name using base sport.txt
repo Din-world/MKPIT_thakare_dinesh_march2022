@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace constructor
+{
+    class sport
+    {
+        public string name = "k L Rahul";
+
+        public sport()
+        {
+            Console.WriteLine("cricket is favourate game");
+        }
+        public void display()
+        {
+            Console.WriteLine("favourate player :" + name);
+        } 
+    } 
+
+     class racing : sport
+    {
+        public string name = "xxxxx";
+
+        public racing()
+        {
+            Console.WriteLine("I like cars");
+        }
+        public void display()
+        {
+            base.display();
+            Console.WriteLine("car name " + name);
+        }
+    }
+    class program
+    {
+        static void Main()
+        {
+            racing race = new racing();
+            race.display();
+        }
+    }
+
+
+
+
+}
