@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace call_base_method
+{
+     class Animal
+    {
+        public void eat()
+        {
+            Console.WriteLine("eating...");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public void eat()
+        {
+            base.eat();                //this will class base class method eat
+            Console.WriteLine("eating bread...");
+        }
+    }
+
+
+    class TestBase
+    {
+        public static void Main()           
+        {
+            Dog g = new Dog();                 //derive class object create
+            g.eat();                         // call the method of derived class
+        }
+    }
+    
+
+}
+
+
+
+                
+            
+
+        
+    
+
