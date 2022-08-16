@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace constructor
+{
+    public class person
+    {
+        public person()
+        {
+            Console.WriteLine("name =dinesh");
+        }
+    }
+    public class student : person
+    {
+        public student()
+        {
+            Console.WriteLine("graduate");
+            Console.WriteLine("salary=50000");
+        }
+
+    }
+    public class TestOverriding
+    {
+        public static void Main()
+        {
+            student std=new student();
+
+        }
+    }
+
+
+
+
+}
