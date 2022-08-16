@@ -1,0 +1,37 @@
+//call the base class animal from derived class using base. Keyword
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Base
+{
+    class Animal
+    {
+        public string color= "White";
+    }
+    class Dog : Animal
+    {
+        public string color = "black";
+        public void display()
+        {
+            Console.WriteLine(" base class Animal " + base.color);
+            Console.WriteLine("derive class dog " + color);
+        }
+    }
+        class program
+        {
+            static void Main(string[] args)
+            {
+                 Dog dog = new Dog();
+                 dog.display();
+
+            }
+        }
+
+
+    
+
+}
