@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace constructor
+{
+    public class Animal
+    {
+        public Animal()
+        {
+            Console.WriteLine("animal...");
+        }
+    }
+    public class Dog : Animal
+    {
+        public Dog()
+        {
+            Console.WriteLine("dog...");
+        }
+
+    }
+    public class TestOverriding
+    {
+        public static void Main()
+        {
+            Dog d = new Dog();
+
+        }
+    }
+
+
+
+
+}
