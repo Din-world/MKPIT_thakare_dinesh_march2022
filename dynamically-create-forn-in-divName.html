@@ -1,0 +1,26 @@
+<!----In this example, we are dynamically writing the html form inside the div name having the id mylocation. We are identifing this position by calling the document.getElementById() method.-->
+<html>
+<head>
+<script>
+function commentform()
+{  
+var data="Name:<input type='text' name='name'> <br> comment:<textarea row='5' cols='80'> </textarea> <br><br> <input type='submit' value='post comment'> ";
+document.getElementById("location").innerHTML=data;
+}
+
+</script>
+</head>
+
+<body>
+
+<form name="form1" id="form1">
+
+<input type=button value="comment" onclick="commentform();">
+<div id="location" name="location"> <div>
+
+</form>
+
+</body>
+</html>
+
+
