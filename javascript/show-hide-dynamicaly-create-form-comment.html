@@ -1,0 +1,33 @@
+<!-- Show/Hide Comment Form Example using innerHTML -->
+ 
+    <html>  
+    <head>  
+     
+    <script>  
+    var flag=1;  
+
+    function commentform()
+{  
+    /* var c= "<form action='submit'><br> Enter Name:<br><input type='text' name='name' id='name' ><br> <br> Enter Email:<br><input type:'email' name='password' id='name' >comment:<br><textarea rows='5' cols='70'> </textarea><br><input type='submit' name='password' id='name' value='send' > </form> " ; */
+
+ var c="<form action='submit'> <br>Enter Name:<br><input type='text' name='name' id='name'><br>  Enter Email:<br><input type='email' name='email'id='name'><br>Enter Comment:<br><textarea rows='5' cols='70'></textarea><br><input type='submit' value='post' name='name' id='name'> </form>" ;  
+
+    if(flag==1){  
+    document.getElementById("mylocation").innerHTML=c;  
+    flag=0;  
+    }else
+   {  
+    document.getElementById("mylocation").innerHTML="";  
+    flag=1;  
+    }  
+    
+}
+ 
+    </script>  
+    </head>  
+    <body>  
+
+    <input type=button onclick="commentform();" value="comment">  
+    <div id="mylocation"></div>  
+    </body>  
+    </html>  
