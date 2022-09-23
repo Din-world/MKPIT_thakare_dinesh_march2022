@@ -1,0 +1,18 @@
+<!--- In this example, a function is called from the event handler:  -->
+
+<html>
+<head>
+<script>
+function display(ct){
+document.getElementById("c").style.color="yellow";
+ct.style.backgroundColor="green";
+    ct.innerHTML="this is new content";
+
+}
+</script>
+</head>
+<body>
+<h1 id="c" onclick="display(this)">this is change when clck on the this heading </h1>
+
+</body>
+</html>
