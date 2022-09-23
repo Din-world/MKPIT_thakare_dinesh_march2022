@@ -1,0 +1,26 @@
+<!--To assign events to HTML elements you can use event attributes.-->
+
+<html>
+<head>
+<script>
+function display(){
+
+document.getElementById("date").innerHTML=Date();
+
+}
+</script>
+
+</head>
+<body>
+<h1> welcome to mkpits </h1>
+<p> click the button to display the date </p>
+
+<br>
+ <!--     <button onclick="display();"> the date is </button> -->
+   <button onmouseover="display();"> the date is </button>  
+  
+
+<p id="date"> </p>
+
+</body>
+</html>
