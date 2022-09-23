@@ -1,0 +1,30 @@
+<!-- In this example, we are going to display the password strength when releases the key after press. -->
+<html>
+<head>
+<title>psswird-strength-when-release-theKeay-using-innertext-property</title>
+<script>
+function display()
+{
+var msg;  
+    if(document.myform.password.value.length>5){  
+    msg="good";  
+    }  
+    else{  
+    msg="poor";  
+    }  
+    document.getElementById('location').innerText=msg;  
+     }  
+
+
+
+</script>
+</head>
+<body>
+<form name="myform">
+enter Name:<input type="text" name="name" id="name"> <br>
+enter password:<input type="password" value="" name="password" onkeyup="display();"> <br>
+
+strength: <span id="location">No strength </span>
+</form>
+</body>
+</html>'
