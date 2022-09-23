@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+document.getElementById("p2").style.color = "blue";
+function  changestyle()
+	{
+	 document.getElementById("p2").style.color = "blue";
+	document.getElementById("d1").style.backgroundColor="green";
+	document.getElementById("d1").style.width="50%";
+		document.getElementById("d1").style.height="50%";
+	}
+	function  changeorgstyle()
+	{
+
+	document.getElementById("d1").style.backgroundColor="gray";
+	document.getElementById("d1").style.width="30%";
+		document.getElementById("d1").style.height="30%";
+	}
+
+</script>
+</head>
+
+<body>
+
+<p id="p2">welcome mkpits</p>
+
+<div onmouseover="changestyle();" onmouseout="changeorgstyle();" id="d1" style="background-color:"gray";color:black;border:1px solid red;padding:30px;">
+  Hello world!
+</div>
+<input type=button value=ok onclick="changestyle()" >
+
+
+</body>
+</html>
