@@ -1,0 +1,32 @@
+<!--Let's validate the textfield for numeric value only. Here, we are using isNaN() function. -->
+<html>
+<head>
+<script>
+function display()
+{
+var n=ducument.myform.name.value;
+console.log(isNaN(n));
+if (isNaN(n))
+{  alert("hello");
+  document.getElementById("msg").innerHTML="Enter Numeric value only";
+return false;
+}
+else{
+   return true;
+}
+
+
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post" action="gobal_variable.jsp" onsubmit="return display()">
+Enter number=<input type="text" name="name" id="name"> <span id="msg"> </span>
+<br><br>
+<input type=submit value="register"> 
+ 
+    </form>  
+
+
+</body>
+</html>
