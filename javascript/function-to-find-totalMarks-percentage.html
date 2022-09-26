@@ -1,0 +1,69 @@
+<!--- function with argument and with returnType find number greater or small && function with argument and with N0returnType find total marks and percentage of student -->
+ <html>
+<Head>
+<title>  </title>
+<script>
+function tm(a,b,c)
+{
+  var c=a+b+c;
+ // console.log(c);
+  // document.write(c);
+ //var s =document.getElementById("res1");      
+//  s.innerText=c;
+return(c);
+ 
+}
+
+
+function per(e)
+{
+    var p=(e/300)*100;
+  
+//console.log(p);
+// document.write(p);
+  
+ // var s=document.getElementById("res2");
+  // s.innerText=p;
+ 
+return(p);
+
+ }
+
+function display()
+{
+   var m1=parseInt(document.getElementById("t1").value);
+   var m2=parseInt(document.getElementById("t2").value);
+    var m3=parseInt(document.getElementById("t3").value);
+     
+  
+   var x=tm(m1,m2,m3);
+  //document.write(x);
+var s=document.getElementById("res1");
+    s.innerText=x;
+var percentage=per(x);
+ var s1=document.getElementById("res2");
+    s1.innerText=percentage; 
+ 
+   
+    
+}
+
+
+</script>
+
+</head>
+<body>
+<h2 text align="center">student marks</h2>
+biology=<input type=text id="t1" > <br><br>
+ physics=<input type=text id="t2" > <br><br>
+ math=<input type=text id="t3" > <br><br>
+ 
+<input type=button value="result" onclick=" display();" > 
+<p>result</p>
+
+Total marks= <span id="res1"> </span>
+<br>
+percentage= <span id="res2"> </span>
+</body>
+
+</html>
